@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6217346812828319014}
   - component: {fileID: 3812980061415975045}
+  - component: {fileID: 865021925262260614}
+  - component: {fileID: 8302805035614873611}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -44,11 +46,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835665467d8d8074fa750dd3fc5000ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
+  path:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 1
+--- !u!114 &865021925262260614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913956950538622340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ef4a7b45fd4f28b8fe2b572e9e5538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 5
+  currentHitPoints: 5
+--- !u!65 &8302805035614873611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913956950538622340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &7321431196359312313
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +95,7 @@ GameObject:
   - component: {fileID: 758598430324647842}
   - component: {fileID: 5258946715525191402}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +122,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7321431196359312313}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: 0eaf0955d0035664c87a3d4177a41887, type: 3}
 --- !u!23 &5258946715525191402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -108,7 +142,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5c969d75e49a22946a8fcf18eb8fd39c, type: 2}
+  - {fileID: -8469494145858465668, guid: af50c4e21f0e9b9419ff00e3c39e7711, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
